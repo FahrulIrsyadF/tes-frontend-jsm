@@ -6,7 +6,7 @@ export default function ListProduct({
   handleProductSelect,
 }) {
   return (
-    <div className="sm:w-1/2 w-full p-4 select-none overflow-auto sm:overflow-hidden hover:overflow-y-auto">
+    <div className="sm:w-1/2 sm:h-auto h-1/2 w-full p-4 select-none overflow-auto sm:overflow-hidden hover:overflow-y-auto">
       <div className="grid grid-cols-1 gap-4">
         {products.map((product) => (
           <div

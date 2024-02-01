@@ -14,7 +14,7 @@ export default function DetailProduct({
   handlePayment,
 }) {
   return (
-    <div className="sm:w-1/2 w-full p-4 sm:overflow-hidden hover:overflow-y-auto">
+    <div className="sm:w-1/2 sm:h-auto h-auto w-full p-4 sm:overflow-hidden hover:overflow-y-auto">
       {selectedProduct ? (
         <div>
           <img
@@ -37,7 +37,7 @@ export default function DetailProduct({
                 quantity={quantity}
               />
 
-              <p className="mb-2 text-[#9D5353]">
+              <p className="my-2 text-lg text-[#9D5353]">
                 Harga yang harus dibayar: Rp.
                 {selectedProduct.price * quantity}
               </p>

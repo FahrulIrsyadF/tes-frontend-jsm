@@ -22,10 +22,10 @@ export default function DetailProduct({
             alt={selectedProduct.name}
             className="mb-4 h-40 w-40 mx-auto object-cover rounded-md"
           />
-          <p className="font-bold text-xl mb-2 text-[#9D5353]">
+          <p className="font-bold text-xl mb-2 text-gray-800">
             Produk: {selectedProduct.name}
           </p>
-          <p className="mb-2 text-[#9D5353]">
+          <p className="mb-2 text-gray-800">
             Harga: Rp.{selectedProduct.price}
           </p>
 
@@ -37,13 +37,13 @@ export default function DetailProduct({
                 quantity={quantity}
               />
 
-              <p className="my-2 text-lg text-[#9D5353]">
+              <p className="my-2 text-lg text-gray-800">
                 Harga yang harus dibayar: Rp.
                 {selectedProduct.price * quantity}
               </p>
 
               <div className="mb-2">
-                <p className="font-bold text-lg text-[#9D5353] mb-2">
+                <p className="font-bold text-lg text-gray-800 mb-2">
                   Masukkan Uang:
                 </p>
                 <div className="flex flex-wrap">
@@ -52,7 +52,7 @@ export default function DetailProduct({
                       key={amount}
                       onClick={() => handleAmountSelect(amount)}
                       className={
-                        "cursor-pointer select-none border border-[#9D5353] p-2 mr-2 mb-2 rounded-md text-[#9D5353] hover:bg-[#9D5353] hover:text-white"
+                        "cursor-pointer select-none border border-[#FF9800] p-2 mr-2 mb-2 rounded-md text-[#FF9800] hover:bg-[#FF9800] hover:text-white"
                       }
                     >
                       Rp.{amount}
@@ -63,7 +63,7 @@ export default function DetailProduct({
 
               {/* Tampilkan jumlah nominal yang dipilih */}
               {selectedAmount.length > 0 && (
-                <div className="mb-2 text-lg text-[#9D5353]">
+                <div className="mb-2 text-lg text-gray-800">
                   Jumlah Nominal:{" "}
                   {Object.entries(
                     selectedAmount.reduce((countMap, amount) => {
@@ -76,18 +76,18 @@ export default function DetailProduct({
                 </div>
               )}
 
-              <p className="mb-2 text-lg text-[#9D5353]">
+              <p className="mb-2 text-lg text-gray-800">
                 Total Saldo Anda: Rp.
                 {selectedAmount.reduce((sum, amount) => sum + amount, 0)}
               </p>
 
-              <p className="mb-2 text-lg text-[#9D5353]">
+              <p className="mb-2 text-lg text-gray-800">
                 Kembalian: Rp.{change}
               </p>
 
               <button
                 onClick={() => handlePayment(selectedProduct.id)}
-                className="bg-[#9D5353] text-white p-3 rounded-md hover:bg-[#BF8B67]"
+                className="bg-[#FF9800] text-white p-3 rounded-md hover:bg-[#fac06b]"
               >
                 Bayar
               </button>

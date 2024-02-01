@@ -3,10 +3,10 @@ import React from "react";
 export default function QuantityButton({ onIncrement, onDecrement, quantity }) {
   return (
     <div className="flex flex-col">
-      <span className="text-[#9D5353]">Kuantitas :</span>
+      <span className="text-gray-700">Kuantitas :</span>
       <div className="relative inline-block text-left mt-2">
         <button
-          className="bg-[#9D5353] hover:bg-[#BF8B67] text-white font-medium py-1 px-3 rounded-lg"
+          className="bg-[#FF9800] hover:bg-[#fac06b] text-white font-medium py-1 px-3 rounded-lg"
           onClick={onDecrement}
         >
           -
@@ -18,7 +18,7 @@ export default function QuantityButton({ onIncrement, onDecrement, quantity }) {
           disabled
         />
         <button
-          className="bg-[#9D5353] hover:bg-[#BF8B67] text-white font-medium py-1 px-3 rounded-lg"
+          className="bg-[#FF9800] hover:bg-[#fac06b] text-white font-medium py-1 px-3 rounded-lg"
           onClick={onIncrement}
         >
           +

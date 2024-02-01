@@ -113,8 +113,8 @@ export default function Vending() {
   }, []);
 
   return (
-    <div className="bg-[#A7727D] py-10 px-5">
-      <div className="flex sm:flex-row flex-col h-screen rounded-2xl py-3 px-3 bg-[#EDDBC7]">
+    <div className="bg-[#FF9800] py-10 px-5">
+      <div className="flex sm:flex-row flex-col h-screen rounded-2xl py-3 px-3 bg-white">
         <ListProduct
           products={products}
           selectedProduct={selectedProduct}

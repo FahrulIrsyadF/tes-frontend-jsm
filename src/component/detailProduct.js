@@ -51,11 +51,9 @@ export default function DetailProduct({
                     <div
                       key={amount}
                       onClick={() => handleAmountSelect(amount)}
-                      className={`cursor-pointer select-none border border-[#9D5353] p-2 mr-2 mb-2 rounded-md text-[#9D5353] ${
-                        selectedAmount === amount
-                          ? "bg-[#9D5353] text-white"
-                          : ""
-                      }`}
+                      className={
+                        "cursor-pointer select-none border border-[#9D5353] p-2 mr-2 mb-2 rounded-md text-[#9D5353] hover:bg-[#9D5353] hover:text-white"
+                      }
                     >
                       Rp.{amount}
                     </div>
